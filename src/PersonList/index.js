@@ -12,7 +12,7 @@ function PersonList(props){
             <Card.Description>{person.favorite_food}</Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <Button>Delete Person</Button>
+            <Button onClick={() => props.deletePerson(person.id)}>Delete Person</Button>
             <Button>Edit Person</Button>
           </Card.Content>
         </Card>
